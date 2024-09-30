@@ -28,7 +28,7 @@ $font-size-mobile: 12px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  align-content: stretch;
+  align-self: center;
   background-color: $background-color;
   font-family: $font-family;
   font-size: $font-size-desktop;
