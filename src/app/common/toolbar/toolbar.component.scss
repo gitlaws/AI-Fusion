@@ -6,6 +6,10 @@ $text-color: #ffffff;
 $padding-desktop: 15px;
 $padding-tablet: 10px;
 $padding-mobile: 5px;
+$font-family: "Roboto", sans-serif;
+$font-size-desktop: 16px;
+$font-size-tablet: 14px;
+$font-size-mobile: 12px;
 
 // Mixins
 @mixin respond-to($media) {
@@ -26,6 +30,8 @@ $padding-mobile: 5px;
   align-items: center;
   align-content: stretch;
   background-color: $background-color;
+  font-family: $font-family;
+  font-size: $font-size-desktop;
 
   height: 100%;
   padding: $padding-desktop;
@@ -33,11 +39,13 @@ $padding-mobile: 5px;
 
   @include respond-to("tablet") {
     padding: $padding-tablet;
+    font-size: $font-size-tablet;
     // justify-content: space-around;
   }
 
   @include respond-to("mobile") {
     padding: $padding-mobile;
+    font-size: $font-size-mobile;
     justify-content: space-around;
   }
 
