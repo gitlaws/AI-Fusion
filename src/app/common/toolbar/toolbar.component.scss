@@ -70,8 +70,9 @@ $padding-mobile: 5px;
     color: $text-color; // Twitch theme dark mode color
     text-decoration: none;
     cursor: pointer;
+
     &:hover {
-      color: lighten(red, 20%);
+      color: #cccccc;
     }
 
     &--login {
