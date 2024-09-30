@@ -1,13 +1,26 @@
-<div class="toolbar-container">
-  <div class="logo">
-    <img src="assets/logo.png" alt="logo" />
+<header class="toolbar">
+  <div class="toolbar__logo">
+    <img src="https://via.placeholder.com/50" alt="logo" />
   </div>
-  <div class="center"></div>
-  <div class="links">
-    <nav class="nav">
-      <a routerLink="/home" routerLinkActive="active">Home</a>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
-    </nav>
-  </div>
-</div>
+  <div class="toolbar__spacer"></div>
+  <nav class="toolbar__nav">
+    <ul class="toolbar__nav-links">
+      <li class="toolbar__nav-item">
+        <a
+          class="toolbar__nav-link toolbar__nav-link--login"
+          routerLink="/login"
+          routerLinkActive="active"
+          >Login</a
+        >
+      </li>
+      <li class="toolbar__nav-item">
+        <a
+          class="toolbar__nav-link toolbar__nav-link--register"
+          routerLink="/register"
+          routerLinkActive="active"
+          >Sign Up</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

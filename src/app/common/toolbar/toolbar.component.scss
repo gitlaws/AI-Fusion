@@ -1,29 +1,88 @@
-.toolbar-container {
+// Variables
+$background-color: #28282b;
+$dark-background-color: #18181b;
+$border-color: #9147ff;
+$text-color: #ffffff;
+$padding-desktop: 15px;
+$padding-tablet: 10px;
+$padding-mobile: 5px;
+
+// Mixins
+@mixin respond-to($media) {
+  @if $media == "tablet" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $media == "mobile" {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+}
+
+.toolbar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   align-content: stretch;
-  background-color: #bbdefb;
+  background-color: $background-color;
+
   height: 100%;
-  padding: 15px;
+  padding: $padding-desktop;
   gap: 5px;
 
-  @media (max-width: 768px) {
-    // Tablet view
-    padding: 10px;
+  @include respond-to("tablet") {
+    padding: $padding-tablet;
     // justify-content: space-around;
   }
 
-  @media (max-width: 480px) {
-    // Mobile view
-    padding: 5px;
+  @include respond-to("mobile") {
+    padding: $padding-mobile;
     justify-content: space-around;
   }
-}
 
-.toolbar-container > div {
-  background: #ffecb3;
-  border: 3px solid #ffcc80;
-  border-radius: 5px;
-  padding: 8px;
+  &__logo,
+  &__spacer,
+  &__nav {
+    // background: $dark-background-color;
+    // border: 3px solid $border-color;
+    border-radius: 5px;
+    padding: 8px;
+  }
+
+  &__nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__nav-item {
+    // Styles for nav items if needed
+  }
+
+  &__nav-link {
+    color: $text-color; // Twitch theme dark mode color
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: lighten(red, 20%);
+    }
+
+    &--login {
+      // Specific styles for home link
+    }
+
+    &--register {
+      // Specific styles for about link
+      background-color: black;
+      border-radius: 5px;
+      border: 3px solid black;
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
 }
