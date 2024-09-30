@@ -6,7 +6,7 @@ $text-color: #ffffff;
 $padding-desktop: 15px;
 $padding-tablet: 10px;
 $padding-mobile: 5px;
-$font-family: "Bungee", sans-serif;
+$font-family: "Roboto", sans-serif;
 $font-size-desktop: 16px;
 $font-size-tablet: 14px;
 $font-size-mobile: 12px;
@@ -91,7 +91,7 @@ $font-size-mobile: 12px;
       // Specific styles for about link
       background-color: black;
       border-radius: 5px;
-      border: 3px solid black;
+      border: 6px solid black;
     }
 
     &.active {
