@@ -1,4 +1,4 @@
-.flex-container {
+.toolbar-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -7,30 +7,23 @@
   height: 100%;
   padding: 15px;
   gap: 5px;
+
+  @media (max-width: 768px) {
+    // Tablet view
+    padding: 10px;
+    // justify-content: space-around;
+  }
+
+  @media (max-width: 480px) {
+    // Mobile view
+    padding: 5px;
+    justify-content: space-around;
+  }
 }
 
-.flex-container > div {
+.toolbar-container > div {
   background: #ffecb3;
   border: 3px solid #ffcc80;
   border-radius: 5px;
   padding: 8px;
-}
-
-.logo {
-  flex: 1;
-}
-
-.links {
-  flex: 3;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.links a {
-  text-decoration: none;
-  color: #000;
-  padding: 8px;
-  border-radius: 5px;
-  background: #ffecb3;
-  border: 3px solid #ffcc80;
 }
