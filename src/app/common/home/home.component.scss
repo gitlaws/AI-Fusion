@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$background-color: #18181b;
+$text-color: #e0e0e0;
+$heading-color-purple: #9147ff;
+$heading-color-green: #00ff00;
+$subtext-color: #adadb8;
+$input-background-color: #2f2f33;
+$chat-window-background-color: #1f1f23;
+$border-color: #2f2f33;
+$button-hover-color: #772ce8;
+$font-family: "Roboto", sans-serif;
+
+.container {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: $heading-color-green;
+    font-family: $font-family;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: $subtext-color;
+    font-family: $font-family;
+  }
+}
+
+.chatbots {
+  margin-bottom: 40px;
+
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    background-color: $input-background-color;
+    color: $text-color;
+    border: 1px solid $heading-color-purple;
+    font-family: $font-family;
+    border-radius: 4px;
+  }
+
+  .chatbot-details {
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: $heading-color-green;
+      font-family: $font-family;
+    }
+
+    p {
+      font-size: 1em;
+      color: $text-color;
+      font-family: $font-family;
+    }
+  }
+}
+
+.chat-interface {
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: $heading-color-green;
+    font-family: $font-family;
+  }
+
+  .chat-window {
+    border: 1px solid $border-color;
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background-color: $chat-window-background-color;
+    color: $text-color;
+    font-family: $font-family;
+    border-radius: 4px;
+  }
+
+  .chat-input {
+    display: flex;
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid $border-color;
+      border-radius: 4px 0 0 4px;
+      background-color: $input-background-color;
+      color: $text-color;
+      font-family: $font-family;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border: 1px solid $border-color;
+      border-left: none;
+      border-radius: 0 4px 4px 0;
+      background-color: $heading-color-purple;
+      color: white;
+      cursor: pointer;
+      font-family: $font-family;
+
+      &:hover {
+        background-color: $button-hover-color;
+      }
+    }
+  }
+}
