@@ -1,0 +1,36 @@
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+  background-color: #bbdefb;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+}
+
+.flex-container > div {
+  background: #ffecb3;
+  border: 3px solid #ffcc80;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.links {
+  flex: 3;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px;
+  border-radius: 5px;
+  background: #ffecb3;
+  border: 3px solid #ffcc80;
+}
