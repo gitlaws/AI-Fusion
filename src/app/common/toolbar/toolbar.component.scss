@@ -14,7 +14,7 @@ $font-size-mobile: 12px;
 // Mixins
 @mixin respond-to($media) {
   @if $media == "tablet" {
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       @content;
     }
   } @else if $media == "mobile" {
@@ -40,13 +40,13 @@ $font-size-mobile: 12px;
   @include respond-to("tablet") {
     padding: $padding-tablet;
     font-size: $font-size-tablet;
-    // justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   @include respond-to("mobile") {
     padding: $padding-mobile;
     font-size: $font-size-mobile;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .logo-image {
