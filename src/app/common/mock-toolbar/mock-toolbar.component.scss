@@ -6,7 +6,7 @@
   background-color: green;
 }
 
-.flex-item-left {
+.flex-left {
   margin-left: 50px;
 
   background-color: gray;
@@ -14,20 +14,20 @@
   flex: 50%;
 }
 
-.flex-item-right {
+.flex-right {
   background-color: dodgerblue;
   padding: 10px;
-  flex: 75%;
+  flex: 50%;
   margin-right: 50px;
 }
 
-.text-left {
+.logo-left {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.text-right {
+.nav-right {
   display: flex;
   justify-content: right;
 }
