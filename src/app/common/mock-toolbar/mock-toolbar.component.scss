@@ -1,0 +1,33 @@
+.flex-container {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  height: 100px;
+  background-color: green;
+}
+
+.flex-item-left {
+  margin-left: 50px;
+
+  background-color: gray;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 75%;
+  margin-right: 50px;
+}
+
+.text-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-right {
+  display: flex;
+  justify-content: right;
+}
