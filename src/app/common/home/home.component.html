@@ -4,7 +4,7 @@
     <p>Interact with and compare various AI assistant bots.</p>
   </header>
   <section class="chatbots">
-    <label for="chatbot-select">Choose a chatbot:</label>
+    <label for="chatbot-select">Choose assistant bot:</label>
     <!-- Added label -->
     <select id="chatbot-select" [(ngModel)]="selectedChatbot">
       <option *ngFor="let chatbot of chatbots" [value]="chatbot">
