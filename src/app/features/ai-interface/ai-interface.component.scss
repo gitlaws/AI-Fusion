@@ -9,6 +9,7 @@ $input-background-color: #2f2f33;
 $chat-window-background-color: #1f1f23;
 $border-color: #2f2f33;
 $button-hover-color: #772ce8;
+$button-mic-hover-color: #ff4500;
 $font-family: "Roboto", sans-serif;
 
 @mixin flex-center {
@@ -87,6 +88,11 @@ $font-family: "Roboto", sans-serif;
         background-color: $input-background-color;
         color: $text-color;
         aria-label: "Message input"; // Accessibility improvement
+
+        &:focus {
+          border-color: transparent; // Remove border color when focused
+          outline: none; // Optionally remove the default outline
+        }
       }
 
       .voice-button {
@@ -95,12 +101,15 @@ $font-family: "Roboto", sans-serif;
         font-size: 1em;
         border: 1px solid $border-color;
         border-left: none;
+        // border-radius: 20px;
         background-color: $input-background-color;
         color: $text-color;
         cursor: pointer;
 
         &:hover {
+          // border-color: $border-color;
           background-color: $button-hover-color;
+          // border-radius: 20px;
         }
 
         i {
