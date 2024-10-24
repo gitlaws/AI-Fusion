@@ -43,8 +43,6 @@ $icon-color: #ffffff;
 .chat-interface {
   display: flex;
   flex-direction: column;
-
-  // height: 100vh; // Ensure the container takes full viewport height
   overflow: hidden; // Prevent scrolling on the main container
   background-color: $background-color;
   color: $text-color;
@@ -52,7 +50,6 @@ $icon-color: #ffffff;
 
   .chat-header {
     padding: 20px;
-    // border-bottom: 1px solid $border-color;
     height: 60px; // Recommended height for the header
 
     h2 {
@@ -80,7 +77,6 @@ $icon-color: #ffffff;
     transform: translateX(-50%);
     padding: 10px;
     margin-bottom: 70px;
-    // background-color: $footer-background-color; // Ensure the footer has a background color
 
     .chat-input-form {
       display: flex;
@@ -101,6 +97,7 @@ $icon-color: #ffffff;
         input[type="text"] {
           width: 100%;
           padding: 10px;
+          padding-right: 40px; // Adjust padding to make space for the icon
           font-size: 1em;
           border: 1px solid $border-color;
           border-radius: 20px; // Adjusted for round borders

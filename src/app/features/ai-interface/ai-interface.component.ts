@@ -19,7 +19,9 @@ export class AiInterfaceComponent implements AfterViewInit {
   constructor(private renderer: Renderer2) {}
 
   ngAfterViewInit() {
-    this.focusInputField();
+    setTimeout(() => {
+      this.focusInputField();
+    }, 0);
   }
 
   private focusInputField(): void {
