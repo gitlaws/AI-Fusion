@@ -1,127 +1,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+// Color Variables
+$heading-color: #ffffff;
+$primary-purple-color: #6441a5;
+$border-light-color: #9147ff;
+$border-dark-color: #6441a5;
+$primary-color: #9146ff;
+$secondary-color: #adadb8;
 $background-color: #18181b;
-$text-color: #e0e0e0;
-$heading-color-purple: #9147ff;
-$heading-color-green: #00ff00;
-$subtext-color: #adadb8;
-$input-background-color: #2f2f33;
-$chat-window-background-color: #1f1f23;
-$border-color: #2f2f33;
-$button-hover-color: #772ce8;
-$font-family: "Roboto", sans-serif;
+$hover-color: darken($primary-color, 10%);
+$subtext-color: #cccccc;
+$subtext-highlight-color: #ffcc00;
+$features-background-color: #202020;
+$features-text-color: #e0e0e0;
 
-.container {
-  font-family: $font-family;
-  background-color: $background-color;
-  color: $text-color;
+// Font Variables
+$heading-font-family: "Roboto", sans-serif;
+$body-font-family: "Open Sans", sans-serif;
+
+// Wrapper Styles
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 768px;
   margin: 0;
-  padding: 0;
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 20px;
   background-color: $background-color;
-  color: $text-color;
-  font-family: $font-family;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
-
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: $heading-color-green;
-    font-family: $font-family;
-  }
-
-  p {
-    font-size: 1.2em;
-    color: $subtext-color;
-    font-family: $font-family;
-  }
+// Intro Container Styles
+.intro-container {
+  text-align: left;
+  padding: 50px;
+  background-color: $background-color;
+  max-width: 1024px;
+  font-family: $body-font-family;
+  color: $secondary-color;
+  line-height: 1.6;
 }
 
-.chatbots {
-  margin-bottom: 40px;
-
-  select {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    margin-bottom: 20px;
-    background-color: $input-background-color;
-    color: $text-color;
-    border: 1px solid $heading-color-purple;
-    font-family: $font-family;
-    border-radius: 4px;
-  }
-
-  .chatbot-details {
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      color: $heading-color-green;
-      font-family: $font-family;
-    }
-
-    p {
-      font-size: 1em;
-      color: $text-color;
-      font-family: $font-family;
-    }
-  }
+// Heading Styles
+.intro-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: $primary-purple-color;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: $heading-font-family;
 }
 
-.chat-interface {
-  h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: $heading-color-green;
-    font-family: $font-family;
-  }
+.intro-container h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: $heading-color;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: $heading-font-family;
+}
 
-  .chat-window {
-    border: 1px solid $border-color;
-    padding: 20px;
-    height: 300px;
-    overflow-y: auto;
-    margin-bottom: 20px;
-    background-color: $chat-window-background-color;
-    color: $text-color;
-    font-family: $font-family;
-    border-radius: 4px;
-  }
+.intro-container .subheading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: $heading-color;
+  font-family: $heading-font-family;
+}
 
-  .chat-input {
-    display: flex;
+// Paragraph Styles
+.intro-container p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: $secondary-color;
+  font-family: $body-font-family;
+  line-height: 1.6;
+}
 
-    input[type="text"] {
-      flex: 1;
-      padding: 10px;
-      font-size: 1em;
-      border: 1px solid $border-color;
-      border-radius: 4px 0 0 4px;
-      background-color: $input-background-color;
-      color: $text-color;
-      font-family: $font-family;
-    }
+// Features, Anecdote, Scenario, Transformation Styles
+.features,
+.anecdote,
+.transformation {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: $body-font-family;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: $features-background-color;
+  border-radius: 10px;
+  color: $features-text-color;
+}
 
-    button {
-      padding: 10px 20px;
-      font-size: 1em;
-      border: 1px solid $border-color;
-      border-left: none;
-      border-radius: 0 4px 4px 0;
-      background-color: $heading-color-purple;
-      color: white;
-      cursor: pointer;
-      font-family: $font-family;
+.features ul,
+.transformation ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
 
-      &:hover {
-        background-color: $button-hover-color;
-      }
-    }
-  }
+// Transformation Heading Styles
+.transformation h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: $heading-color;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: $heading-font-family;
+}
+
+.transformation h4 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: $heading-color;
+  font-family: $heading-font-family;
+}
+
+// Button Styles
+.get-started-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: $body-font-family;
+}
+
+.get-started-btn:hover {
+  background-color: $hover-color;
+  transform: scale(1.05);
+}
+
+// Subtext Styles
+.subtext {
+  color: $subtext-color;
+  font-size: 0.9em;
+  font-family: $body-font-family;
+}
+
+.subtext-highlight {
+  color: $subtext-highlight-color;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: $body-font-family;
 }

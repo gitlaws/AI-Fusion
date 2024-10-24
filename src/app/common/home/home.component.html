@@ -1,27 +1,131 @@
-<div class="container">
-  <header>
-    <h1>AI Tools</h1>
-    <p>Interact with and compare various AI assistant bots.</p>
-  </header>
-  <section class="chatbots">
-    <label for="chatbot-select">Choose assistant bot:</label>
-    <!-- Added label -->
-    <select id="chatbot-select" [(ngModel)]="selectedChatbot">
-      <option *ngFor="let chatbot of chatbots" [value]="chatbot">
-        {{ chatbot.name }}
-      </option>
-    </select>
-    <div class="chatbot-details">
-      <h2>{{ selectedChatbot.name }}</h2>
-      <p>{{ selectedChatbot.description }}</p>
+<div class="wrapper">
+  <div class="intro-container">
+    <h1>AI Fusion</h1>
+    <p>
+      AI Fusion is your ultimate AI tool app designed to enhance productivity
+      and streamline your workflow. Explore the powerful features and
+      capabilities that AI Fusion offers to make your tasks easier and more
+      efficient.
+    </p>
+    <div class="features">
+      <h3>Key Features:</h3>
+      <ul>
+        <li>
+          Personalized AI assistants tailored for specific industries or tasks
+        </li>
+        <li>Enterprise solutions, mobile apps, specialized software</li>
+        <li>Highly customized to meet the unique needs of your business</li>
+        <li>
+          Utilizes RAG (Retrieval-Augmented Generation) for accurate responses
+        </li>
+      </ul>
     </div>
-  </section>
-  <section class="chat-interface">
-    <h2>Chat Interface</h2>
-    <div class="chat-window"></div>
-    <div class="chat-input">
-      <input type="text" placeholder="Type your message here..." />
-      <button>Send</button>
+
+    <div class="scenario">
+      <h3>Use case for Retrieval-Augmented Generation:</h3>
+      <p>
+        Imagine accessing an admin panel to query a database in a bank. Instead
+        of manually searching, you can simply ask the AI assistant, "How many
+        new user accounts do we have at our bank?" and it will provide the
+        details instantly.
+      </p>
     </div>
-  </section>
+
+    <div class="transformation">
+      <h3>
+        AI Assistants Transforming Business Application Software and Web
+        Applications
+      </h3>
+      <p>
+        AI assistants are poised to revolutionize the way businesses interact
+        with and utilize application software and web applications. Here are
+        some key areas where we can expect significant transformations:
+      </p>
+      <h4>1. Natural Language Interfaces:</h4>
+      <ul>
+        <li>
+          <strong>Voice Commands:</strong> AI assistants will enable users to
+          interact with applications using natural language voice commands,
+          making it easier and more intuitive to access information and perform
+          tasks.
+        </li>
+        <li>
+          <strong>Text-Based Queries:</strong> Users will be able to type in
+          questions or requests, and the AI assistant will provide relevant
+          information or complete actions.
+        </li>
+      </ul>
+      <h4>2. Task Automation:</h4>
+      <ul>
+        <li>
+          <strong>Routine Tasks:</strong> AI assistants can automate repetitive
+          tasks, such as data entry, scheduling, and email management, freeing
+          up employees to focus on more strategic work.
+        </li>
+        <li>
+          <strong>Complex Processes:</strong> For more complex tasks, AI
+          assistants can assist users by suggesting steps, providing guidance,
+          and even automating parts of the process.
+        </li>
+      </ul>
+      <h4>3. Intelligent Recommendations:</h4>
+      <ul>
+        <li>
+          <strong>Personalized Suggestions:</strong> AI assistants can analyze
+          user behavior and preferences to provide personalized recommendations
+          for tasks, tools, or information within applications.
+        </li>
+        <li>
+          <strong>Predictive Analytics:</strong> By leveraging machine learning,
+          AI assistants can predict future trends and needs, offering proactive
+          suggestions.
+        </li>
+      </ul>
+      <h4>4. Enhanced Customer Service:</h4>
+      <ul>
+        <li>
+          <strong>24/7 Support:</strong> AI assistants can provide
+          round-the-clock customer support, answering questions and resolving
+          issues efficiently.
+        </li>
+        <li>
+          <strong>Personalized Interactions:</strong> AI assistants can tailor
+          their responses to individual customers, improving the overall
+          customer experience.
+        </li>
+      </ul>
+      <h4>5. Integration with Existing Systems:</h4>
+      <ul>
+        <li>
+          <strong>Seamless Integration:</strong> AI assistants can seamlessly
+          integrate with existing business applications and systems, providing a
+          unified and cohesive experience.
+        </li>
+        <li>
+          <strong>Data-Driven Insights:</strong> By analyzing data from various
+          sources, AI assistants can offer valuable insights and recommendations
+          to improve business processes.
+        </li>
+      </ul>
+      <h4>6. Increased Productivity and Efficiency:</h4>
+      <ul>
+        <li>
+          <strong>Time-Saving:</strong> AI assistants can automate tasks and
+          provide quick access to information, saving employees time and effort.
+        </li>
+        <li>
+          <strong>Improved Decision-Making:</strong> By offering data-driven
+          insights and recommendations, AI assistants can help businesses make
+          more informed decisions.
+        </li>
+      </ul>
+    </div>
+    <p>
+      As AI technology continues to advance, we can expect to see even more
+      innovative applications and use cases for AI assistants in business
+      software and web applications. These transformative changes will drive
+      increased efficiency, productivity, and customer satisfaction.
+    </p>
+    <!-- <button class="get-started-btn">Get Started</button> -->
+  </div>
 </div>
