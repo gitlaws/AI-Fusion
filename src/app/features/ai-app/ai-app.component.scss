@@ -6,15 +6,6 @@ $heading-color-green: #00ff00;
 $subtext-color: #adadb8;
 $font-family: "Roboto", sans-serif;
 
-//gradients
-$gradient-purple: linear-gradient(90deg, #9147ff 0%, #772ce8 100%);
-$gradient-green: linear-gradient(90deg, #00ff00 0%, #00cc00 100%);
-$gradient-blue: linear-gradient(90deg, #1cb0f6 0%, #1a8cd8 100%);
-$gradient-pink: linear-gradient(90deg, #ff77ff 0%, #ff33cc 100%);
-$gradient-orange: linear-gradient(90deg, #ff9900 0%, #ff6600 100%);
-$gradient-red: linear-gradient(90deg, #ff4d4d 0%, #ff0000 100%);
-$gradient-yellow: linear-gradient(90deg, #ffff00 0%, #ffcc00 100%);
-
 .container {
   font-family: $font-family;
   background-color: $background-color;
@@ -24,25 +15,24 @@ $gradient-yellow: linear-gradient(90deg, #ffff00 0%, #ffcc00 100%);
   max-width: 768px;
 }
 
-header {
+.main-header {
   text-align: center;
   margin-bottom: 40px;
 
   .gradient-text {
     background: linear-gradient(90deg, #9146ff, #b9a3e3);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   h1 {
     font-size: 32px;
     margin-bottom: 10px;
-    // color: $heading-color-green;
-    // background: $gradient-blue;
     font-family: $font-family;
   }
 
-  p {
+  .description {
     font-size: 16px;
     color: $subtext-color;
     font-family: $font-family;
