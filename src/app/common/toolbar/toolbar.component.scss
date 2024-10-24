@@ -38,10 +38,10 @@ $font-size-mobile: 12px;
   background-color: $background-color;
   font-family: $font-family;
   font-size: $font-size-desktop;
-  width: 1440px;
   height: 85px;
   padding: $padding-desktop;
   gap: 5px;
+  width: 1440px;
 
   @include respond-to("tablet") {
     padding: $padding-tablet;
