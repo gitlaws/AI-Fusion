@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$background-color: #18181b;
+$text-color: #e0e0e0;
+$heading-color-purple: #9147ff;
+$heading-color-green: #00ff00;
+$subtext-color: #adadb8;
+$input-background-color: #2f2f33;
+$chat-window-background-color: #1f1f23;
+$border-color: #2f2f33;
+$button-hover-color: #772ce8;
+$font-family: "Roboto", sans-serif;
+
+.chatbots {
+  margin-bottom: 40px;
+
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    background-color: $input-background-color;
+    color: $text-color;
+    border: 1px solid $heading-color-purple;
+    font-family: $font-family;
+    border-radius: 4px;
+  }
+
+  .chatbot-details {
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: $heading-color-green;
+      font-family: $font-family;
+    }
+
+    p {
+      font-size: 1em;
+      color: $text-color;
+      font-family: $font-family;
+    }
+  }
+}

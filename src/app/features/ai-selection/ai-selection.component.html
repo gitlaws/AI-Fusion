@@ -1,1 +1,13 @@
-<p>ai-selection works!</p>
+<section class="chatbots">
+  <label for="chatbot-select">Choose assistant bot:</label>
+  <!-- Added label -->
+  <select id="chatbot-select" [(ngModel)]="selectedChatbot">
+    <option *ngFor="let chatbot of chatbots" [value]="chatbot">
+      {{ chatbot.name }}
+    </option>
+  </select>
+  <div class="chatbot-details">
+    <h2>{{ selectedChatbot.name }}</h2>
+    <p>{{ selectedChatbot.description }}</p>
+  </div>
+</section>

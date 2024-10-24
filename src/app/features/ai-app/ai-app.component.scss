@@ -1,3 +1,44 @@
-p {
-  color: white;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$background-color: #18181b;
+$text-color: #e0e0e0;
+$heading-color-purple: #9147ff;
+$heading-color-green: #00ff00;
+$subtext-color: #adadb8;
+$input-background-color: #2f2f33;
+$chat-window-background-color: #1f1f23;
+$border-color: #2f2f33;
+$button-hover-color: #772ce8;
+$font-family: "Roboto", sans-serif;
+
+.container {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: $heading-color-green;
+    font-family: $font-family;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: $subtext-color;
+    font-family: $font-family;
+  }
 }
