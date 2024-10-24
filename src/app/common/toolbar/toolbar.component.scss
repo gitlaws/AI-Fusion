@@ -60,6 +60,16 @@ $font-size-mobile: 12px;
   .logo-image {
     width: 100px;
     height: 100px;
+
+    @include respond-to("tablet") {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include respond-to("mobile") {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &__logo,

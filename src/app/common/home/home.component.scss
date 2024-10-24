@@ -24,11 +24,11 @@ $font-size-mobile: 14px;
 // Mixin for responsive design
 @mixin respond-to($media) {
   @if $media == "tablet" {
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (max-width: 1200px) {
       @content;
     }
   } @else if $media == "mobile" {
-    @media (max-width: 767px) {
+    @media (max-width: 896) {
       @content;
     }
   }
