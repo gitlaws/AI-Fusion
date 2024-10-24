@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-ai-selection',
   standalone: true,
-  imports: [CommonModule, FormsModule], // Add FormsModule to imports
+  imports: [CommonModule, FormsModule],
   templateUrl: './ai-selection.component.html',
   styleUrl: './ai-selection.component.scss',
 })

@@ -31,7 +31,7 @@ $body-font-family: "Open Sans", sans-serif;
 // Intro Container Styles
 .intro-container {
   text-align: left;
-  padding: 50px;
+  padding: 20px;
   background-color: $background-color;
   max-width: 1024px;
   font-family: $body-font-family;
@@ -41,7 +41,7 @@ $body-font-family: "Open Sans", sans-serif;
 
 // Heading Styles
 .intro-container h1 {
-  font-size: 2.5em;
+  font-size: 2em; // Reduced from 2.5em
   margin-bottom: 20px;
   color: $primary-purple-color;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -49,7 +49,7 @@ $body-font-family: "Open Sans", sans-serif;
 }
 
 .intro-container h3 {
-  font-size: 1.8em;
+  font-size: 1.5em; // Reduced from 1.8em
   margin-bottom: 15px;
   color: $heading-color;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -57,7 +57,7 @@ $body-font-family: "Open Sans", sans-serif;
 }
 
 .intro-container .subheading {
-  font-size: 2em;
+  font-size: 1.7em; // Reduced from 2em
   margin-bottom: 20px;
   color: $heading-color;
   font-family: $heading-font-family;
@@ -65,7 +65,7 @@ $body-font-family: "Open Sans", sans-serif;
 
 // Paragraph Styles
 .intro-container p {
-  font-size: 1.2em;
+  font-size: 1em; // Reduced from 1.2em
   margin-bottom: 30px;
   color: $secondary-color;
   font-family: $body-font-family;
@@ -95,7 +95,7 @@ $body-font-family: "Open Sans", sans-serif;
 
 // Transformation Heading Styles
 .transformation h3 {
-  font-size: 1.8em;
+  font-size: 1.5em; // Reduced from 1.8em
   margin-bottom: 15px;
   color: $heading-color;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -103,7 +103,7 @@ $body-font-family: "Open Sans", sans-serif;
 }
 
 .transformation h4 {
-  font-size: 1.5em;
+  font-size: 1.3em; // Reduced from 1.5em
   margin-top: 20px;
   margin-bottom: 10px;
   color: $heading-color;
@@ -112,8 +112,10 @@ $body-font-family: "Open Sans", sans-serif;
 
 // Button Styles
 .get-started-btn {
+  height: 50px;
+  width: 100%;
   padding: 10px 20px;
-  font-size: 1em;
+  font-size: 1em; // Reduced from 1em
   color: #fff;
   background-color: $primary-color;
   border: none;
@@ -125,19 +127,19 @@ $body-font-family: "Open Sans", sans-serif;
 
 .get-started-btn:hover {
   background-color: $hover-color;
-  transform: scale(1.05);
+  // transform: scale(1.05);
 }
 
 // Subtext Styles
 .subtext {
   color: $subtext-color;
-  font-size: 0.9em;
+  font-size: 0.8em; // Reduced from 0.9em
   font-family: $body-font-family;
 }
 
 .subtext-highlight {
   color: $subtext-highlight-color;
-  font-size: 0.9em;
+  font-size: 0.8em; // Reduced from 0.9em
   font-weight: bold;
   font-family: $body-font-family;
 }
