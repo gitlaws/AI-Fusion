@@ -23,6 +23,7 @@ $gradient-yellow: linear-gradient(90deg, #ffff00 0%, #ffcc00 100%);
 .gradient-text {
   background: linear-gradient(90deg, #32cd32, #ffffff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -58,6 +59,28 @@ $gradient-yellow: linear-gradient(90deg, #ffff00 0%, #ffcc00 100%);
       background-color: $input-background-color;
       color: $text-color;
       font-family: $font-family;
+    }
+
+    .voice-button {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid $border-color;
+      border-left: none;
+      background-color: $input-background-color;
+      color: $text-color;
+      cursor: pointer;
+      font-family: $font-family;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: $button-hover-color;
+      }
+
+      i {
+        font-size: 1.2em;
+      }
     }
 
     button {
