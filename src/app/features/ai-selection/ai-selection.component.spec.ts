@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ComparisonToolComponent } from './comparison-tool.component';
+import { AiSelectionComponent } from './ai-selection.component';
 
-describe('ComparisonToolComponent', () => {
-  let component: ComparisonToolComponent;
-  let fixture: ComponentFixture<ComparisonToolComponent>;
+describe('AiSelectionComponent', () => {
+  let component: AiSelectionComponent;
+  let fixture: ComponentFixture<AiSelectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ComparisonToolComponent]
+      imports: [AiSelectionComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ComparisonToolComponent);
+    fixture = TestBed.createComponent(AiSelectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
