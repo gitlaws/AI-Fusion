@@ -7,6 +7,11 @@ $color-background: #1f1f23;
 $color-accent: #f0f0f0;
 $background-color: #18181b;
 
+$gradient-purple-dark: linear-gradient(90deg, #9146ff, #6441a5);
+$gradient-light-purple: linear-gradient(90deg, #b9a3e3, #9146ff);
+$gradient-pink-purple: linear-gradient(90deg, #ff9eed, #9146ff);
+$gradient-aqua-purple: linear-gradient(90deg, #00ffcc, #9146ff);
+
 // Variables for spacing
 $margin-small: 10px;
 $margin-medium: 20px;
@@ -58,9 +63,16 @@ $font-secondary: "Montserrat", sans-serif;
     header {
       text-align: left;
 
+      .gradient-text {
+        background: linear-gradient(90deg, #00ffcc, #9146ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
       h1 {
         text-align: center;
-        color: #b9a3e3;
+        // color: #b9a3e3;
+        // background: linear-gradient(to right, #b9a3e3, #20b2aa);
         font-size: $font-size-large;
         margin-bottom: $margin-small;
         font-weight: bold;
@@ -171,6 +183,7 @@ $font-secondary: "Montserrat", sans-serif;
         margin-top: $margin-small;
         @include padding($margin-small $margin-medium);
         background-color: $btn-color-primary;
+        // background: $gradient-pink-purple;
         color: #53535f;
         border: none;
         width: 100%;
