@@ -11,12 +11,25 @@ $background-color: #18181b;
 $hover-color: darken($primary-color, 10%);
 $subtext-color: #cccccc;
 $subtext-highlight-color: #ffcc00;
-$features-background-color: #202020;
+$features-background-color: rgba(32, 32, 32, 0.3); // 80% opacity
 $features-text-color: #e0e0e0;
 
 // Font Variables
 $heading-font-family: "Roboto", sans-serif;
 $body-font-family: "Open Sans", sans-serif;
+
+// Mixin for responsive design
+@mixin respond-to($media) {
+  @if $media == "tablet" {
+    @media (min-width: 768px) and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $media == "mobile" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}
 
 // Wrapper Styles
 .wrapper {
@@ -37,6 +50,14 @@ $body-font-family: "Open Sans", sans-serif;
   font-family: $body-font-family;
   color: $secondary-color;
   line-height: 1.6;
+
+  // @include respond-to("tablet") {
+  //   padding: 15px;
+  // }
+
+  // @include respond-to("mobile") {
+  //   padding: 10px;
+  // }
 }
 
 // Heading Styles
@@ -46,6 +67,14 @@ $body-font-family: "Open Sans", sans-serif;
   color: $primary-purple-color;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   font-family: $heading-font-family;
+
+  @include respond-to("tablet") {
+    font-size: 1.8em;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 1.5em;
+  }
 }
 
 .intro-container h3 {
@@ -54,6 +83,14 @@ $body-font-family: "Open Sans", sans-serif;
   color: $heading-color;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   font-family: $heading-font-family;
+
+  @include respond-to("tablet") {
+    font-size: 1.3em;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 1.1em;
+  }
 }
 
 .intro-container .subheading {
@@ -61,6 +98,14 @@ $body-font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
   color: $heading-color;
   font-family: $heading-font-family;
+
+  @include respond-to("tablet") {
+    font-size: 1.5em;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 1.3em;
+  }
 }
 
 // Paragraph Styles
@@ -70,6 +115,14 @@ $body-font-family: "Open Sans", sans-serif;
   color: $secondary-color;
   font-family: $body-font-family;
   line-height: 1.6;
+
+  @include respond-to("tablet") {
+    font-size: 0.9em;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 0.8em;
+  }
 }
 
 // Features, Anecdote, Scenario, Transformation Styles
@@ -85,29 +138,63 @@ $body-font-family: "Open Sans", sans-serif;
   background-color: $features-background-color;
   border-radius: 10px;
   color: $features-text-color;
+
+  @include respond-to("tablet") {
+    padding: 15px;
+  }
+
+  @include respond-to("mobile") {
+    padding: 10px;
+  }
 }
 
 .features ul,
 .transformation ul {
   list-style-type: disc;
   padding-left: 20px;
+
+  @include respond-to("tablet") {
+    padding-left: 15px;
+  }
+
+  @include respond-to("mobile") {
+    padding-left: 10px;
+  }
 }
 
 // Transformation Heading Styles
 .transformation h3 {
-  font-size: 1.5em; // Reduced from 1.8em
+  font-size: 1em; // Reduced from 1.8em
   margin-bottom: 15px;
   color: $heading-color;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   font-family: $heading-font-family;
+
+  @include respond-to("tablet") {
+    font-size: 1.3em;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 1.1em;
+  }
 }
 
 .transformation h4 {
-  font-size: 1.3em; // Reduced from 1.5em
+  font-size: 1em; // Reduced from 1.5em
   margin-top: 20px;
   margin-bottom: 10px;
   color: $heading-color;
   font-family: $heading-font-family;
+}
+
+.transformation li {
+  @include respond-to("tablet") {
+    font-size: 0.9em;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 0.8em;
+  }
 }
 
 // Button Styles
@@ -123,6 +210,14 @@ $body-font-family: "Open Sans", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-family: $body-font-family;
+
+  @include respond-to("tablet") {
+    font-size: 0.9em;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 0.8em;
+  }
 }
 
 .get-started-btn:hover {
@@ -135,6 +230,14 @@ $body-font-family: "Open Sans", sans-serif;
   color: $subtext-color;
   font-size: 0.8em; // Reduced from 0.9em
   font-family: $body-font-family;
+
+  @include respond-to("tablet") {
+    font-size: 0.7em;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 0.6em;
+  }
 }
 
 .subtext-highlight {
@@ -142,4 +245,12 @@ $body-font-family: "Open Sans", sans-serif;
   font-size: 0.8em; // Reduced from 0.9em
   font-weight: bold;
   font-family: $body-font-family;
+
+  @include respond-to("tablet") {
+    font-size: 0.7em;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 0.6em;
+  }
 }
