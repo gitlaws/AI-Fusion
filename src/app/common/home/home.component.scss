@@ -153,11 +153,16 @@ $font-secondary: "Montserrat", sans-serif;
       }
     }
 
-    // .scenario {
-    //   h2 {
-    //     color: #53535f;
-    //   }
-    // }
+    .features {
+      position: relative;
+    }
+
+    .feature-image {
+      float: right;
+      margin: 0 0 10px 10px;
+      width: 100px;
+      height: 100px;
+    }
 
     .article-container {
       background-color: $color-background;
