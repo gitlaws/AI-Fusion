@@ -1,8 +1,12 @@
-<div class="sidenav" [class.open]="isSidenavOpen">
-  <button class="closebtn" (click)="closeNav()">&times;</button>
-  <a href="#">Response Output</a>
+<div
+  class="sidenav"
+  [class.open]="isSidenavOpen"
+  [class.closed]="!isSidenavOpen"
+>
+  <button class="togglebtn" (click)="toggleNav()">
+    {{ isSidenavOpen ? "&times;" : "&#9776; Open Side Nav" }}
+  </button>
+  <!-- <a href="#">Response Output</a>
   <a href="#">AI Stuff</a>
-  <a href="#">Settings</a>
+  <a href="#">Settings</a> -->
 </div>
-
-<button class="openbtn" (click)="openNav()">&#9776; Open Side Nav</button>

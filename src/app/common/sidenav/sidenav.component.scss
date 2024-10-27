@@ -1,15 +1,14 @@
 .sidenav {
-  margin-top: 150px;
   height: 100%;
-  width: 0;
+  width: 50px; /* Default width when closed */
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 85px; /* Adjust this value to match the height of the toolbar */
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  transition: width 0.5s;
+  padding-top: 20px; /* Adjust padding to avoid overlap with toolbar */
 }
 
 .sidenav a {
@@ -25,25 +24,22 @@
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.sidenav .togglebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
   color: #818181;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .sidenav.open {
   width: 250px;
 }
 
-/* Open button styles */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+.sidenav.closed {
+  width: 80px;
 }

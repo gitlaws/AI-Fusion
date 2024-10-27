@@ -10,11 +10,7 @@ import { Component } from '@angular/core';
 export class SidenavComponent {
   isSidenavOpen = false;
 
-  openNav() {
-    this.isSidenavOpen = true;
-  }
-
-  closeNav() {
-    this.isSidenavOpen = false;
+  toggleNav() {
+    this.isSidenavOpen = !this.isSidenavOpen;
   }
 }

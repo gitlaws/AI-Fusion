@@ -1,22 +1,26 @@
-/* Toolbar styles */
-app-toolbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  background-color: #111; /* Ensure the toolbar has a background color */
-}
+// /* Toolbar styles */
+// app-toolbar {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 2;
+//   display: flex;
+//   align-items: center;
+//   padding: 10px;
+//   background-color: #111; /* Ensure the toolbar has a background color */
+// }
 
 /* Main content styles */
 main {
-  margin-top: 60px; /* Adjust this value to match the height of the toolbar */
-  margin-left: 0;
+  //   margin-top: 60px; /* Adjust this value to match the height of the toolbar */
+  margin-left: 50px; /* Default margin when sidenav is closed */
   transition: margin-left 0.5s;
 }
 
 app-sidenav.open + main {
   margin-left: 250px;
+}
+
+app-sidenav.closed + main {
+  margin-left: 80px;
 }
