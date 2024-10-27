@@ -1,1 +1,16 @@
-<p>chat-window works!</p>
+<div class="chat-window">
+  <div class="chat-header">
+    <h2>Chat Window</h2>
+  </div>
+  <div class="chat-container">
+    <cdk-virtual-scroll-viewport itemSize="50" class="chat-messages" (scrolledIndexChange)="onScroll()">
+      <div *cdkVirtualFor="let message of messages" class="message">
+        {{ message }}
+      </div>
+    </cdk-virtual-scroll-viewport>
+  </div>
+  <!-- <div class="chat-input">
+    <textarea [(ngModel)]="newMessage" (input)="autoResize($event)" rows="1"></textarea>
+    <button (click)="sendMessage()">Send</button>
+  </div> -->
+</div>

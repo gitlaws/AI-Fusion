@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$background-color: #18181b;
+$input-area-background-color: #2a2a2e;
+$border-color: #2f2f33;
+$font-family: "Roboto", sans-serif;
+$icon-color: #ffffff;
+$caret-color: #ffffff;
+$chat-header-background-color: #2a2a2e;
+$chat-input-background-color: #2a2a2e;
+$chat-button-background-color: #9147ff;
+$chat-button-hover-color: #772ce8;
+
+.chat-window {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid $border-color;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+}
+
+.chat-header {
+  margin-top: 12px;
+  background-color: $chat-header-background-color;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+  color: $icon-color;
+
+  h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-bottom: 1px solid $border-color;
+  color: $icon-color;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: $chat-input-background-color;
+
+  textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid $border-color;
+    border-radius: 16px;
+    margin-right: 10px;
+    background-color: $input-area-background-color;
+    color: $icon-color;
+    resize: none;
+    overflow-x: auto;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: $chat-button-background-color;
+    color: $icon-color;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $chat-button-hover-color;
+    }
+  }
+}
