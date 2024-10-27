@@ -49,8 +49,6 @@ $font-secondary: "Montserrat", sans-serif;
 .wrapper {
   background-color: $background-color;
   color: $color-text;
-  // height: 1900px;
-  // @include padding($margin-medium);
   font-family: $font-primary;
 
   .intro-container {
@@ -58,7 +56,6 @@ $font-secondary: "Montserrat", sans-serif;
     margin: 0 auto;
     @include padding($margin-medium);
     @include border-radius($border-radius-medium);
-    // @include box-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 
     header {
       text-align: left;
@@ -72,8 +69,6 @@ $font-secondary: "Montserrat", sans-serif;
 
       h1 {
         text-align: center;
-        // color: #b9a3e3;
-        // background: linear-gradient(to right, #b9a3e3, #20b2aa);
         font-size: $font-size-large;
         margin-bottom: $margin-small;
         font-weight: bold;
@@ -92,11 +87,11 @@ $font-secondary: "Montserrat", sans-serif;
     .features,
     .scenario,
     .transformation {
-      margin-top: $margin-large;
+      width: 600px;
+      margin: $margin-large auto 0;
       @include padding($margin-medium);
       background-color: $color-background;
       @include border-radius($border-radius-medium);
-
       @include box-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 
       h2 {
@@ -127,7 +122,6 @@ $font-secondary: "Montserrat", sans-serif;
 
       article {
         margin-top: $margin-large;
-
         @include padding($margin-small);
         @include border-radius($border-radius-medium);
 
@@ -177,7 +171,6 @@ $font-secondary: "Montserrat", sans-serif;
       background-color: $background-color;
       @include border-radius($border-radius-medium);
       text-align: left;
-      // @include box-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 
       p {
         font-size: $font-size-small;
@@ -190,7 +183,6 @@ $font-secondary: "Montserrat", sans-serif;
         margin-top: $margin-small;
         @include padding($margin-small $margin-medium);
         background-color: $btn-color-primary;
-        // background: $gradient-pink-purple;
         color: #d3d3d3;
         border: none;
         width: 100%;
@@ -204,7 +196,6 @@ $font-secondary: "Montserrat", sans-serif;
         &:hover {
           background-color: darken($btn-color-primary, 10%);
           color: #53535f;
-          // transform: translateY(-2px);
         }
       }
     }
