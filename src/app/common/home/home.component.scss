@@ -66,6 +66,7 @@ $font-secondary: "Montserrat", sans-serif;
       .gradient-text {
         background: linear-gradient(90deg, #9146ff, #ffffff);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
       }
 
