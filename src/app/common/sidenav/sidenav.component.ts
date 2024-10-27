@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './sidenav.component.scss',
 })
 export class SidenavComponent {
-  closeNav() {
-    // Logic to close the side navigation
-    console.log('Side navigation closed');
-  }
+  isSidenavOpen = false;
 
   openNav() {
-    // Logic to open the side navigation
-    console.log('Side navigation opened');
+    this.isSidenavOpen = true;
+  }
+
+  closeNav() {
+    this.isSidenavOpen = false;
   }
 }
