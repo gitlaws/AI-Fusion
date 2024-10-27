@@ -1,5 +1,10 @@
-<app-toolbar></app-toolbar>
-<app-sidenav></app-sidenav>
+<app-toolbar>
+  <button class="openbtn" (click)="sidenav.openNav()">
+    &#9776; Open Side Nav
+  </button>
+</app-toolbar>
+
+<app-sidenav #sidenav></app-sidenav>
 
 <main>
   <router-outlet></router-outlet>

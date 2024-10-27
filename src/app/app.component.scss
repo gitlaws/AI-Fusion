@@ -4,6 +4,10 @@ app-toolbar {
   top: 0;
   width: 100%;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #111; /* Ensure the toolbar has a background color */
 }
 
 /* Main content styles */
@@ -13,6 +17,6 @@ main {
   transition: margin-left 0.5s;
 }
 
-.sidenav.open + main {
+app-sidenav.open + main {
   margin-left: 250px;
 }
