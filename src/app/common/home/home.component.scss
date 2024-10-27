@@ -54,7 +54,7 @@ $font-secondary: "Montserrat", sans-serif;
   font-family: $font-primary;
 
   .intro-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     @include padding($margin-medium);
     @include border-radius($border-radius-medium);
