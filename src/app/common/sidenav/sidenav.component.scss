@@ -5,7 +5,7 @@
   z-index: 1;
   top: 85px; /* Adjust this value to match the height of the toolbar */
   left: 0;
-  background-color: #111;
+  background-color: #1e1e20; /* Dark themed background color */
   overflow-x: hidden;
   transition: width 0.5s;
   padding-top: 20px; /* Adjust padding to avoid overlap with toolbar */
@@ -47,11 +47,11 @@
 }
 
 .sidenav.open .togglebtn {
-  color: #ff0000; /* Color when sidenav is open */
+  color: #3a3a3d; /* Color when sidenav is open */
 }
 
 .sidenav.closed .togglebtn {
-  color: #00ff00; /* Color when sidenav is closed */
+  color: #4c4c4f; /* Color when sidenav is closed */
 }
 
 .sidenav.open {
@@ -59,5 +59,5 @@
 }
 
 .sidenav.closed {
-  width: 80px;
+  width: 50px;
 }
