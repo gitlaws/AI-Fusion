@@ -37,7 +37,7 @@ $font-family: "Roboto", sans-serif;
 .sidenav .togglebtn {
   position: absolute;
   top: 10px; /* Adjusted for better alignment */
-  right: 16px; /* Adjusted for better alignment */
+  right: 24px; /* Adjusted for better alignment */
   font-size: 24px; /* Adjust font size for Font Awesome icons */
   color: #818181; /* Default color */
   background: none;
@@ -60,9 +60,9 @@ $font-family: "Roboto", sans-serif;
 }
 
 .sidenav.open {
-  width: 250px;
+  width: 320px;
 }
 
 .sidenav.closed {
-  width: 50px;
+  width: 72px;
 }
