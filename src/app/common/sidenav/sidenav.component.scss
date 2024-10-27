@@ -13,6 +13,7 @@ $font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   transition: width 0.5s;
   padding-top: 20px; /* Adjust padding to avoid overlap with toolbar */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidemenu-container {
