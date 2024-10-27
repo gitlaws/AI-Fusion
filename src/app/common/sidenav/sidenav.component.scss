@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$font-family: "Roboto", sans-serif;
+
 .sidenav {
   height: 100%;
   width: 50px; /* Default width when closed */
@@ -19,8 +23,9 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-family: $font-family;
+  font-size: 16px;
+  color: #d4d4d7;
   display: block;
   transition: 0.3s;
 }
@@ -32,7 +37,7 @@
 .sidenav .togglebtn {
   position: absolute;
   top: 10px; /* Adjusted for better alignment */
-  right: 10px; /* Adjusted for better alignment */
+  right: 16px; /* Adjusted for better alignment */
   font-size: 24px; /* Adjust font size for Font Awesome icons */
   color: #818181; /* Default color */
   background: none;
