@@ -24,10 +24,15 @@ $font-size-mobile: 16px;
   }
 }
 
+@mixin header-box-shadow($h-offset, $v-offset, $blur, $spread, $color) {
+  box-shadow: $h-offset $v-offset $blur $spread $color;
+}
+
 .toolbar-container {
   display: flex;
   justify-content: center;
   background-color: $background-color;
+  @include header-box-shadow(0, 4px, 6px, 0, hsla(0, 0%, 0%, 0.2));
 }
 
 .toolbar {
