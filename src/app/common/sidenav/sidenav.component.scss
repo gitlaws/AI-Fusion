@@ -49,16 +49,16 @@ $font-family: "Roboto", sans-serif;
 }
 
 .sidenav .togglebtn:hover {
-  color: #f1f1f1; /* Color on hover */
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  color: #ffffffde; /* Color on hover */
+  // transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .sidenav.open .togglebtn {
-  color: rgba(255, 255, 255, 0.87); /* Color when sidenav is open */
+  color: #ffffffde; /* Color when sidenav is open */
 }
 
 .sidenav.closed .togglebtn {
-  color: rgba(255, 255, 255, 0.87); /* Color when sidenav is closed */
+  color: #ffffffde; /* Color when sidenav is closed */
 }
 
 .sidenav.open {
