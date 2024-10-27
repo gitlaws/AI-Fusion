@@ -54,11 +54,11 @@ $font-family: "Roboto", sans-serif;
 }
 
 .sidenav.open .togglebtn {
-  color: #4c4c4f; /* Color when sidenav is open */
+  color: rgba(255, 255, 255, 0.87); /* Color when sidenav is open */
 }
 
 .sidenav.closed .togglebtn {
-  color: #4c4c4f; /* Color when sidenav is closed */
+  color: rgba(255, 255, 255, 0.87); /* Color when sidenav is closed */
 }
 
 .sidenav.open {
