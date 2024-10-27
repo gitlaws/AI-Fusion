@@ -3,12 +3,12 @@
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 60px; /* Adjust this value to match the height of the toolbar */
   left: 0;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 20px; /* Adjust padding to avoid overlap with toolbar */
 }
 
 .sidenav a {

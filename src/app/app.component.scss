@@ -1,0 +1,18 @@
+/* Toolbar styles */
+app-toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Main content styles */
+main {
+  margin-top: 60px; /* Adjust this value to match the height of the toolbar */
+  margin-left: 0;
+  transition: margin-left 0.5s;
+}
+
+.sidenav.open + main {
+  margin-left: 250px;
+}
