@@ -11,6 +11,11 @@
   padding-top: 20px; /* Adjust padding to avoid overlap with toolbar */
 }
 
+.sidemenu-container {
+  margin-top: 60px;
+  visibility: hidden;
+}
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
