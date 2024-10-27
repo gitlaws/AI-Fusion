@@ -3,15 +3,17 @@
   [class.open]="isSidenavOpen"
   [class.closed]="!isSidenavOpen"
 >
-  <button class="togglebtn" (click)="toggleNav()">
-    {{ isSidenavOpen ? "&times;" : "&#9776; " }}
+  <button title="togglebtn" class="togglebtn" (click)="toggleNav()">
+    <i [class]="isSidenavOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
   </button>
   <div
     class="sidemenu-container"
     [style.visibility]="isSidenavOpen ? 'visible' : 'hidden'"
   >
-    <a href="#">Response Output</a>
-    <a href="#">AI Stuff</a>
-    <a href="#">Settings</a>
+    <a href="#">Responses</a>
+    <a href="#">Profile</a>
+    <a href="#">Messages</a>
+    <a href="#">Notifications</a>
+    <a href="#">Logout</a>
   </div>
 </div>

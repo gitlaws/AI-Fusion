@@ -31,14 +31,27 @@
 
 .sidenav .togglebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  color: #818181;
+  top: 10px; /* Adjusted for better alignment */
+  right: 10px; /* Adjusted for better alignment */
+  font-size: 24px; /* Adjust font size for Font Awesome icons */
+  color: #818181; /* Default color */
   background: none;
   border: none;
   cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.sidenav .togglebtn:hover {
+  color: #f1f1f1; /* Color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.sidenav.open .togglebtn {
+  color: #ff0000; /* Color when sidenav is open */
+}
+
+.sidenav.closed .togglebtn {
+  color: #00ff00; /* Color when sidenav is closed */
 }
 
 .sidenav.open {
