@@ -1,34 +1,22 @@
-body {
-  display: flex;
-  margin: 0;
-  height: 100vh;
-  overflow: hidden;
-}
+/* Toolbar styles */
+// app-toolbar {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 2;
+// }
 
-app-sidenav {
-  transition: width 0.3s;
-}
-
-app-sidenav.closed {
-  width: 72px; /* Width for closed state */
-}
-
-app-sidenav.open {
-  width: 320px; /* Width for open state */
-}
-
+/* Main content styles */
 main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: margin-left 0.3s;
+  // margin-top: 60px; /* Adjust this value to match the height of the toolbar */
+  margin-left: 50px; /* Default margin when sidenav is closed */
+  transition: margin-left 0.5s;
 }
 
 app-sidenav.open + main {
-  margin-left: 320px;
+  margin-left: 250px;
 }
 
 app-sidenav.closed + main {
-  margin-left: 72px;
+  margin-left: 80px;
 }

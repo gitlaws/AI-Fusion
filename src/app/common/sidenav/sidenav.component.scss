@@ -4,15 +4,15 @@ $font-family: "Roboto", sans-serif;
 
 .sidenav {
   height: 100%;
-  width: 72px; /* Default width when closed */
+  width: 60px; /* Default width when closed */
   position: fixed;
   z-index: 1;
-  top: 0; /* Adjust this value to match the height of the toolbar */
+  top: 0;
   left: 0;
-  background-color: #1e1e20; /* Dark themed background color */
+  background-color: #202124; /* Dark themed background color */
   overflow-x: hidden;
-  transition: width 0.5s;
-  padding-top: 20px; /* Adjust padding to avoid overlap with toolbar */
+  transition: width 0.3s;
+  padding-top: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -27,21 +27,21 @@ $font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-family: $font-family;
   font-size: 16px;
-  color: #d4d4d7;
+  color: #e8eaed;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 .sidenav .togglebtn {
   position: absolute;
-  top: 10px; /* Adjusted for better alignment */
-  right: 24px; /* Adjusted for better alignment */
-  font-size: 24px; /* Adjust font size for Font Awesome icons */
-  color: #818181; /* Default color */
+  top: 10px;
+  right: 24px;
+  font-size: 24px;
+  color: #9aa0a6;
   background: none;
   border: none;
   cursor: pointer;
@@ -49,21 +49,21 @@ $font-family: "Roboto", sans-serif;
 }
 
 .sidenav .togglebtn:hover {
-  color: #ffffffde; /* Color on hover */
+  color: #ffffff;
 }
 
 .sidenav.open .togglebtn {
-  color: #ffffffde; /* Color when sidenav is open */
+  color: #ffffff;
 }
 
 .sidenav.closed .togglebtn {
-  color: #ffffffde; /* Color when sidenav is closed */
+  color: #9aa0a6;
 }
 
 .sidenav.open {
-  width: 320px;
+  width: 240px;
 }
 
 .sidenav.closed {
-  width: 72px;
+  width: 60px;
 }
