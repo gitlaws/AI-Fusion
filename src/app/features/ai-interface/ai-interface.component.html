@@ -1,21 +1,13 @@
 <div class="bottom-container">
   <div class="input-area">
     <input type="text" placeholder="Ask AI..." />
-    <button title="mic-button" class="mic-button">
-      <i class="fas fa-microphone"></i>
-    </button>
+    <div class="icon-container">
+      <button title="voice-input-button" class="mic-button">
+        <i class="fas fa-microphone"></i>
+      </button>
+      <button title="voice-command-button" class="mic-button">
+        <i class="fas fa-microphone-alt"></i>
+      </button>
+    </div>
   </div>
 </div>
-
-<!-- <div class="input-section">
-  <input
-    type="text"
-    placeholder="Enter your prompt..."
-    [(ngModel)]="userInput"
-  />
-  <button (click)="submitPrompt()">Submit</button>
-  <button (click)="clearInput()">Clear</button>
-</div>
-<div class="output-section">
-  <p *ngIf="aiResponse">{{ aiResponse }}</p>
-</div> -->

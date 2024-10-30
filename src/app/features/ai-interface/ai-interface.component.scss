@@ -13,23 +13,24 @@ $caret-color: #ffffff;
   width: 100%;
   background-color: $background-color;
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px; /* Increased padding */
+  padding: 20px;
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
 }
 
 .input-area {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 800px; /* Increased max-width */
+  max-width: 800px;
 }
 
 .input-area input {
   flex: 1;
-  padding: 15px; /* Increased padding */
-  font-size: 18px; /* Increased font size */
+  padding: 15px 60px 15px 15px; /* Adjust padding to make space for icons */
+  font-size: 18px;
   border: 1px solid $border-color;
   border-radius: 32px;
   outline: none;
@@ -37,21 +38,28 @@ $caret-color: #ffffff;
   caret-color: $caret-color;
 }
 
+.icon-container {
+  position: absolute;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+}
+
 .mic-button {
   background: none;
   border: none;
-  margin-left: 15px; /* Increased margin */
   cursor: pointer;
-  position: relative;
-  padding: 15px; /* Increased padding */
-  border-radius: 50%;
-  transition: background-color 0.3s;
   color: $icon-color;
-  font-size: 24px; /* Increased font size */
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .mic-button:hover {
-  background-color: lighten($background-color, 20%);
+  color: lighten($icon-color, 20%);
+  transform: scale(1.1);
 }
 
 .mic-button:active::after {
@@ -71,5 +79,53 @@ $caret-color: #ffffff;
   to {
     transform: translate(-50%, -50%) scale(4);
     opacity: 0;
+  }
+}
+
+/* Responsive Styles */
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .input-area {
+    max-width: 1000px;
+  }
+
+  .input-area input {
+    font-size: 20px;
+  }
+
+  .mic-button {
+    font-size: 26px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .input-area {
+    max-width: 700px;
+  }
+
+  .input-area input {
+    font-size: 16px;
+  }
+
+  .mic-button {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .input-area {
+    max-width: 100%;
+  }
+
+  .input-area input {
+    font-size: 14px;
+    padding: 10px 50px 10px 10px; /* Adjust padding for mobile */
+  }
+
+  .mic-button {
+    font-size: 20px;
   }
 }
