@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,12 +6,13 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './sidenav.component.html',
-  styleUrl: './sidenav.component.scss',
+  styleUrls: ['./sidenav.component.scss'],
 })
 export class SidenavComponent {
-  isSidenavOpen = false;
+  @Output() sidenavToggle = new EventEmitter<void>();
+  isSidenavOpen: any;
 
   toggleNav() {
-    this.isSidenavOpen = !this.isSidenavOpen;
+    this.sidenavToggle.emit();
   }
 }

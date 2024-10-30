@@ -3,6 +3,7 @@
 
   <app-sidenav
     [ngClass]="{ open: isSidenavOpen, closed: !isSidenavOpen }"
+    (sidenavToggle)="toggleSidenav()"
   ></app-sidenav>
 
   <!-- <app-chat-bot></app-chat-bot> -->
