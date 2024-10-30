@@ -6,6 +6,7 @@ $border-color: #2f2f33;
 $font-family: "Roboto", sans-serif;
 $icon-color: #ffffff;
 $caret-color: #ffffff;
+$hover-border-color: #d3d3d3; /* Light gray color for hover border */
 
 .bottom-container {
   position: fixed;
@@ -49,17 +50,14 @@ $caret-color: #ffffff;
   background: none;
   border: none;
   cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
   color: $icon-color;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .mic-button:hover {
-  color: lighten($icon-color, 20%);
-  transform: scale(1.1);
+  background-color: lighten($background-color, 30%);
 }
 
 .mic-button:active::after {
