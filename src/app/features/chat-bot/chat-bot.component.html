@@ -1,0 +1,12 @@
+<div class="chatbot-container" [class.open]="isOpen">
+  <div class="chatbot-icon" (click)="toggleChat()">
+    <img src="https://i.imgur.com/h5NnVNc.png" alt="Chatbot" />
+  </div>
+  <div class="chatbot-input" *ngIf="isOpen">
+    <textarea
+      [(ngModel)]="userInput"
+      placeholder="Ask me anything..."
+    ></textarea>
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>

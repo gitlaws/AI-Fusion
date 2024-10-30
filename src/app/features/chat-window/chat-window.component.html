@@ -3,7 +3,11 @@
     <h2>Chat Window</h2>
   </div>
   <div class="chat-container">
-    <cdk-virtual-scroll-viewport itemSize="50" class="chat-messages" (scrolledIndexChange)="onScroll()">
+    <cdk-virtual-scroll-viewport
+      itemSize="50"
+      class="chat-messages"
+      (scrolledIndexChange)="onScroll()"
+    >
       <div *cdkVirtualFor="let message of messages" class="message">
         {{ message }}
       </div>
