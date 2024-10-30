@@ -4,7 +4,7 @@ $font-family: "Roboto", sans-serif;
 
 .sidenav {
   height: 100%;
-  width: 50px; /* Default width when closed */
+  width: 72px; /* Default width when closed */
   position: fixed;
   z-index: 1;
   top: 0; /* Adjust this value to match the height of the toolbar */
@@ -50,7 +50,6 @@ $font-family: "Roboto", sans-serif;
 
 .sidenav .togglebtn:hover {
   color: #ffffffde; /* Color on hover */
-  // transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .sidenav.open .togglebtn {

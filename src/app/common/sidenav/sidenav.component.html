@@ -3,7 +3,7 @@
   [class.open]="isSidenavOpen"
   [class.closed]="!isSidenavOpen"
 >
-  <button title="togglebtn" class="togglebtn" (click)="toggleNav()">
+  <button class="togglebtn" (click)="toggleNav()">
     <i [class]="isSidenavOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
   </button>
   <div
