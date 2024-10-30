@@ -7,7 +7,7 @@ $font-family: "Roboto", sans-serif;
   width: 50px; /* Default width when closed */
   position: fixed;
   z-index: 1;
-  top: 85px; /* Adjust this value to match the height of the toolbar */
+  top: 0; /* Adjust this value to match the height of the toolbar */
   left: 0;
   background-color: #1e1e20; /* Dark themed background color */
   overflow-x: hidden;
