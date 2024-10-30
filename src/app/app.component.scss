@@ -7,3 +7,12 @@ app-sidenav {
     width: 72px;
   }
 }
+
+main {
+  transition: margin-left 0.3s ease; /* Smooth transition for margin change */
+  margin-left: 72px; /* Default margin-left when sidenav is closed */
+}
+
+.sidenav-open main {
+  margin-left: 320px; /* Adjust margin-left when sidenav is open */
+}
