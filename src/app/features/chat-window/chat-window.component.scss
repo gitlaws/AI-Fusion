@@ -13,13 +13,13 @@ $chat-button-hover-color: #772ce8;
 
 .chat-window {
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   border: 1px solid $border-color;
   border-radius: 16px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   background-color: $background-color;
 }
 
@@ -39,9 +39,9 @@ $chat-button-hover-color: #772ce8;
 }
 
 .chat-container {
-  display: flex;
-  flex-direction: column;
-  height: 400px;
+  // display: flex;
+  // flex-direction: column;
+  height: 100dvh;
 }
 
 .chat-messages {

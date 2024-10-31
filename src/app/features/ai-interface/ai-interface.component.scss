@@ -12,6 +12,7 @@ $hover-border-color: #d3d3d3; /* Light gray color for hover border */
   position: fixed;
   bottom: 0;
   width: 100%;
+  // max-width: 600px;
   background-color: $background-color;
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -25,7 +26,7 @@ $hover-border-color: #d3d3d3; /* Light gray color for hover border */
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .input-area input {
@@ -84,10 +85,6 @@ $hover-border-color: #d3d3d3; /* Light gray color for hover border */
 
 /* Desktop */
 @media (min-width: 1024px) {
-  .input-area {
-    max-width: 1000px;
-  }
-
   .input-area input {
     font-size: 20px;
   }
@@ -99,10 +96,6 @@ $hover-border-color: #d3d3d3; /* Light gray color for hover border */
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .input-area {
-    max-width: 700px;
-  }
-
   .input-area input {
     font-size: 16px;
   }
@@ -114,9 +107,9 @@ $hover-border-color: #d3d3d3; /* Light gray color for hover border */
 
 /* Mobile */
 @media (max-width: 767px) {
-  .input-area {
-    max-width: 100%;
-  }
+  // .input-area {
+  //   width: 50%;
+  // }
 
   .input-area input {
     font-size: 14px;
