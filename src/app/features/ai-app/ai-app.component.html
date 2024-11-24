@@ -6,5 +6,5 @@
   <app-ai-selection></app-ai-selection>
 </section> -->
 
-<app-chat-window></app-chat-window>
-<app-input-area></app-input-area>
+<app-chat-window [receivedMessage]="messageFromInputArea"></app-chat-window>
+<app-input-area (messageSent)="handleMessageSent($event)"></app-input-area>

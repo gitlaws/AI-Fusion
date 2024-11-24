@@ -14,6 +14,14 @@ import { InputAreaComponent } from '../input-area/input-area.component';
     InputAreaComponent,
   ],
   templateUrl: './ai-app.component.html',
-  styleUrl: './ai-app.component.scss',
+  styleUrls: ['./ai-app.component.scss'],
 })
-export class AiAppComponent {}
+export class AiAppComponent {
+  messageFromInputArea: string = '';
+
+  handleMessageSent(message: string) {
+    this.messageFromInputArea = message;
+    // Here you can also call the backend API to get the response from the LLM
+    // and then update the messageFromInputArea with the response
+  }
+}

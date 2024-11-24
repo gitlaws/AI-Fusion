@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
@@ -22,10 +22,9 @@ export class ChatWindowComponent implements AfterViewInit {
     this.scrollToBottom();
   }
 
-  sendMessage() {
-    if (this.newMessage.trim()) {
-      this.messages.push(this.newMessage);
-      this.newMessage = '';
+  @Input() set receivedMessage(message: string) {
+    if (message) {
+      this.messages.push(message);
       this.scrollToBottom();
     }
   }
