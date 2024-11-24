@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { AiSelectionComponent } from '../ai-selection/ai-selection.component';
 import { ChatWindowComponent } from '../chat-window/chat-window.component';
 import { InputAreaComponent } from '../input-area/input-area.component';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-ai-app',
@@ -13,6 +13,7 @@ import { HttpClient } from '@angular/common/http';
     AiSelectionComponent,
     ChatWindowComponent,
     InputAreaComponent,
+    HttpClientModule,
   ],
   templateUrl: './ai-app.component.html',
   styleUrls: ['./ai-app.component.scss'],
