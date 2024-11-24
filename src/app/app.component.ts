@@ -20,9 +20,9 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'AI-Fusion';
-  isSidenavOpen = false;
+  // isSidenavOpen = false;
 
-  toggleSidenav() {
-    this.isSidenavOpen = !this.isSidenavOpen;
-  }
+  // toggleSidenav() {
+  //   this.isSidenavOpen = !this.isSidenavOpen;
+  // }
 }

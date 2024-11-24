@@ -1,13 +1,11 @@
-<div [ngClass]="{ 'sidenav-open': isSidenavOpen }">
-  <app-toolbar></app-toolbar>
+<!-- <div [ngClass]="{ 'sidenav-open': isSidenavOpen }">
 
-  <!-- <app-sidenav
-    [ngClass]="{ open: isSidenavOpen, closed: !isSidenavOpen }"
-    (sidenavToggle)="toggleSidenav()"
-  ></app-sidenav> -->
+</div> -->
+<app-toolbar></app-toolbar>
 
-  <!-- <app-chat-bot></app-chat-bot> -->
-  <main>
-    <router-outlet></router-outlet>
-  </main>
-</div>
+<!-- <app-sidenav></app-sidenav> -->
+
+<!-- <app-chat-bot></app-chat-bot> -->
+<main>
+  <router-outlet></router-outlet>
+</main>

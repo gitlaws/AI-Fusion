@@ -1,16 +1,16 @@
-// app-sidenav {
-//   &.open {
-//     width: 320px;
-//   }
+app-sidenav {
+  &.open {
+    width: 320px;
+  }
 
-//   &.closed {
-//     width: 72px;
-//   }
-// }
+  &.closed {
+    width: 72px;
+  }
+}
 
 // main {
-//   //   transition: margin-left 0.3s ease; /* Smooth transition for margin change */
-//   // margin-left: 72px; /* Default margin-left when sidenav is closed */
+//   transition: margin-left 0.3s ease; /* Smooth transition for margin change */
+//   margin-left: 72px; /* Default margin-left when sidenav is closed */
 // }
 
 // .sidenav-open main {
