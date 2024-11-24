@@ -38,3 +38,18 @@ $font-family: "Roboto", sans-serif;
     font-family: $font-family;
   }
 }
+
+.ai-app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+app-chat-window {
+  flex: 1;
+  overflow-y: auto;
+}
+
+app-input-area {
+  flex-shrink: 0;
+}
