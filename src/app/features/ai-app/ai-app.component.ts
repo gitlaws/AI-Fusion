@@ -30,7 +30,7 @@ export class AiAppComponent {
     const apiUrl =
       'https://api-inference.huggingface.co/models/EleutherAI/gpt-j-6B';
     const headers = {
-      Authorization: `Bearer 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`,
+      Authorization: `Bearer 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`,
     };
     const payload = {
       inputs: message,
@@ -43,6 +43,10 @@ export class AiAppComponent {
       },
       (error) => {
         console.error('Error fetching response from GPT-J:', error);
+        console.error('Error details:', error.message);
+        console.error('Error status:', error.status);
+        this.messageFromInputArea =
+          'Error fetching response from GPT-J. Please try again later.';
       }
     );
   }
