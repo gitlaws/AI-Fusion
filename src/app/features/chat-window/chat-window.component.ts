@@ -14,6 +14,9 @@ import {
   styleUrls: ['./chat-window.component.scss'],
 })
 export class ChatWindowComponent implements AfterViewInit {
+  onScroll(): void {
+    console.log('Scrolled');
+  }
   @ViewChild(CdkVirtualScrollViewport) viewport!: CdkVirtualScrollViewport;
   messages: string[] = [];
   newMessage: string = '';
@@ -33,15 +36,5 @@ export class ChatWindowComponent implements AfterViewInit {
     setTimeout(() => {
       this.viewport.scrollToIndex(this.messages.length);
     });
-  }
-
-  onScroll() {
-    // Handle manual scrolling and save scroll position if needed
-  }
-
-  autoResize(event: Event) {
-    const textarea = event.target as HTMLTextAreaElement;
-    textarea.style.height = 'auto';
-    textarea.style.height = `${textarea.scrollHeight}px`;
   }
 }

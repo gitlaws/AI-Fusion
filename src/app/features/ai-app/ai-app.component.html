@@ -6,7 +6,8 @@
   <app-ai-selection></app-ai-selection>
 </section> -->
 
-<div class="ai-app-container">
-  <app-chat-window [receivedMessage]="messageFromInputArea"></app-chat-window>
-  <app-input-area (messageSent)="handleMessageSent($event)"></app-input-area>
-</div>
+<!-- <div class="ai-app-container">
+
+</div> -->
+<app-chat-window [receivedMessage]="messageFromInputArea"></app-chat-window>
+<app-input-area (messageSent)="handleMessageSent($event)"></app-input-area>
