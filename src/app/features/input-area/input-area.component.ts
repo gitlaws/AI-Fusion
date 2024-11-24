@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-ai-interface',
+  selector: 'app-input-area',
   standalone: true,
   imports: [],
-  templateUrl: './ai-interface.component.html',
-  styleUrls: ['./ai-interface.component.scss'],
+  templateUrl: './input-area.component.html',
+  styleUrls: ['./input-area.component.scss'],
 })
-export class AiInterfaceComponent implements AfterViewInit {
+export class InputAreaComponent implements AfterViewInit {
   @ViewChild('inputField') inputField!: ElementRef;
 
   constructor(private renderer: Renderer2) {}
