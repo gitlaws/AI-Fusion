@@ -11,7 +11,7 @@ import {
   standalone: true,
   imports: [],
   templateUrl: './input-area.component.html',
-  styleUrls: ['./input-area.component.scss'],
+  styleUrl: './input-area.component.scss',
 })
 export class InputAreaComponent implements AfterViewInit {
   @ViewChild('inputField') inputField!: ElementRef;
