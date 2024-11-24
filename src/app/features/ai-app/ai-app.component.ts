@@ -30,7 +30,7 @@ export class AiAppComponent {
     const apiUrl =
       'https://api-inference.huggingface.co/models/EleutherAI/gpt-j-6B';
     const headers = {
-      Authorization: `Bearer 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`,
+      Authorization: `Bearer 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`,
     };
     const payload = {
       inputs: message,
