@@ -5,15 +5,19 @@ import {
   CdkVirtualScrollViewport,
   ScrollingModule,
 } from '@angular/cdk/scrolling';
+import { InputAreaComponent } from '../input-area/input-area.component';
 
 @Component({
   selector: 'app-chat-window',
   standalone: true,
-  imports: [CommonModule, FormsModule, ScrollingModule],
+  imports: [CommonModule, FormsModule, ScrollingModule, InputAreaComponent],
   templateUrl: './chat-window.component.html',
   styleUrls: ['./chat-window.component.scss'],
 })
 export class ChatWindowComponent implements AfterViewInit {
+  handleMessageSent($event: string) {
+    throw new Error('Method not implemented.');
+  }
   onScroll(): void {
     console.log('Scrolled');
   }
